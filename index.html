@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link class="img-circle" rel="shortcut icon" type="text/css" href="Images/Banner.png">
+  <title>Birthday Toons</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background: radial-gradient(circle, red, orange, yellow);">
+  <style>
+    .button {
+  background: radial-gradient(circle, red, orange, yellow); /* Green */
+  border: 2px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   }
+   div.polaroid {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+    }
+    
+  </style>
+
+  <div >
+   <center><img src="Images/Banner.png" style = "width: 90%; height: 250px" alt="Happy-Birthday-Banner"></center> 
+  </div><!--Banner div close-->
+
+  <div>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Birthday Toons</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="AfterParty.html">AfterParty</a></li>
+        <li><a href="Childhood_Memories.html">Childhood Memories</a></li>
+        <li><a href="Thank_You.html">Thank You</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+       </ul>
+     </div>
+   </div>
+  </nav>
+  </div><!--Navbar Div Close-->
+
+  <div class = "container"  style="background-color: #6d1046;"><!--Container Div Start-->
+
+  <div class="col-md-12">
+     <div class = "col-md-2" >
+      <marquee direction="up">
+      <center><img class = "img-responsive" src="Images/Marquee_balloons_up.gif" style="height: 400px; width: 100%; "/></center>
+      </marquee>
+     </div>
+
+     <div class = "col-md-2">
+      <marquee direction="up">
+      <center><img class = "img-responsive" src="Images/Marquee_balloons_up.gif" style="height: 400px; width: 100%; "/></center>
+      </marquee>
+     </div>
+
+     <div class = "col-md-4">
+       <center><img id="bcake" onclick = "document.getElementById('bcake').src='Images/Naina.jpg';" src="Images/Cake.gif" class="img-circle" alt="Cake" style="height: 400px; width: 100%; "></center>
+     </div>
+
+     <div class = "col-md-2" >
+      <marquee direction="up">
+      <center><img class = "img-responsive" src="Images/Marquee_balloons_up.gif" style="height: 400px; width: 100%; "/></center>
+      </marquee>
+     </div>
+
+     <div class = "col-md-2">
+      <marquee direction="up">
+      <center><img class = "img-responsive" src="Images/Marquee_balloons_up.gif" style="height: 400px; width: 100%; "/></center>
+      </marquee>
+     </div>         
+  </div><!--Cake div close-->
+
+  <div class = "col-md-12">
+    <div class="col-md-3"></div>
+  <div class="col-md-6">
+  <center><button class="button" onclick="document.getElementById('Surprise').style.display='block'">
+    CLick Here to See &#10024; Main Surprise &#10024; &#128562; &#129497;
+  </button></center>
+  </div>
+  <div class="col-md-3"></div>
+  </div><!--Button Div Close-->
+
+<div style="text-align:center; display:none;" id="Surprise"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="370">
+    <source src="Videos/NainaBirthday.mp4" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div><!--Video Div Close-->
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 300; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 370; 
+} 
+</script>
+
+  <div class="col-md-12">
+    <div class="col-md-3">
+      <button class="button" onclick="document.getElementById('cake_cutting-blowing').src='Images/Blow_them.gif'">Click Here To Blow Candles &#128168; &#128168;</button><br>
+      <center><p id = "para_" onclick="document.getElementById('para_').innerHTML='&#11088; &#11088; @Bhai  &#11088; &#11088;'" style="color: gold; font-size: 20px; text-shadow: 2px 2px 5px red;"> A very Happiest Birthday to you &#127752; &#127752; &#127752;,<br>
+          I Wish an pray that Not only this Year but On Each and Every Day &#x1F342; &#x1F342;,<br>
+          You Keep on Smiling &#128516; like This.... &#129325;&#129316;&#128516;<br>
+          Once again<br>&#127881;&#127879;Happy Birthday&#127881;&#127878; from Me and All Those who Care About you<br>
+          </p></center>
+
+      <script type="text/javascript">
+        
+
+      </script>
+    </div>
+    <div class="col-md-6">
+      <center><img id="cake_cutting-blowing" src="Images/13years.jpg" style = "width: 100%; height: 100%;" alt="Cake Blowing_Img"></center>
+    </div><div class="col-md-3">
+      <button class="button" onclick="document.getElementById('cake_cutting-blowing').src='Images/Cake_cutting.gif'">Click Here to Cut  &#127881; Your Cake &#128516; &#127856; &#127856;</button><br>
+      <div class="polaroid" style="padding-top: 15px;">
+      <img src="Images/card.jpg" alt="Card" style="width: 100%; height: 250px;">
+      </div>
+    </div>
+  </div><!--JpgSpecial Div Close-->
+  
+  </div><!--Container div close-->
+
+  <div class="col-md-12" style= "padding-top: 10px; width: 100%; background: radial-gradient(circle, red, orange, yellow);">
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-6">
+    <center><b style=" font-family: jokerman;">Designed and Developed By a Brother for her Sister<br>@Priyanshu_Sharma</b></center>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div><!--Creator Div Close--> 
+   
+  <div class="col-md-12" style= " width: 100%; background: radial-gradient( grey, black);">
+    <div class="col-md-3">
+      <b style="color: white; text-shadow: black;">To Know More CLick Below&#128071;:</b>
+      <p>&#11088;&#11088;&#11088;<a href="https://www.linkedin.com/in/priyanshusharma232/" target="_blank">
+        <img src="Images/LinkedIn_Logo.png" style="height:30px; width: 30px; " class="img-thumbnail" alt="LinkedIn logo">
+      </a>&#11088;&#11088;&#11088;</p>
+    </div>
+    <div class="col-md-6">
+    </div>
+    <div class="col-md-3">
+      <center><b style="color: white; text-shadow: black;">Follow Me:</b></center>
+      <a href="https://www.facebook.com/priyanshu.khajuria" target="_blank"><img src="Images/fb_logo.jpg" style="height:30px; width:30px; margin-left: 40px;" class="img-thumbnail" alt="Fb Logo"></a>
+      <a href="https://www.instagram.com/priyanshu56336" target="_blank"><img src="Images/Insta_logo.jpg" style="height:30px; width:30px; margin-left: 20px;" class="img-thumbnail" alt="Insta-Logo"></a>
+      <a href="https://youtube.com/channel/UCAJRLrQysgacpxtMX0iAxTQ" target="_blank"><img src="Images/Youtube-logo.gif" style="height:30px; width:50px; margin-left: 20px;" class="img-rounded" alt="Youtube Logo"></a>
+    </div>
+  </div><!--Footer Div Close-->
+</body>
+</html>
